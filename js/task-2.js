@@ -1,3 +1,7 @@
+
+
+
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -24,3 +28,20 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+
+
+
+
+const gallery = document.querySelector('.gallery');
+
+const galleryItems = images.map((image, index) => `
+  <li class="gallery-item">
+    <img class="gallery-image" src="${image.url}" alt="${image.alt}" data-action="${index + 1}">
+  </li>
+`).join('');
+
+gallery.insertAdjacentHTML('beforeend', galleryItems);
+
+
+console.log('Галерея створена з', images.length, 'зображень');

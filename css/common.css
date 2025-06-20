@@ -49,24 +49,32 @@ li {
   box-sizing: border-box;
 }
 ---------------------task--2------------------
+a {
+  color: #007BFF;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
 
+a:hover {
+  text-decoration: underline;
+}
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 1440px;
-  margin: 0 24px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 24px; 
+  max-width: 1128px; 
+  margin: 0 24px; 
 }
 
 .gallery-item {
-  padding: 0;
-  background-color: #fff;
+  padding: 0; 
+  background-color: #fff; 
 }
 
 .gallery-image {
   max-width: 100%;
-  display: block;
+  display: block; 
   height: auto;
 }
 
