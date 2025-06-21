@@ -44,4 +44,3 @@ const galleryItems = images.map((image, index) => `
 gallery.insertAdjacentHTML('beforeend', galleryItems);
 
 
-console.log('Галерея створена з', images.length, 'зображень');
